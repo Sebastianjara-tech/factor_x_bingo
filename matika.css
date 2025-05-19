@@ -1,0 +1,168 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Fondo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('recursos/FONDO.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EA574A;
+  padding: 15px 20px;
+}
+
+.logo img {
+  height: 100px;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+
+    background-color: #477a76;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Contenido principal */
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 70px 120px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #2c5563;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.componentes-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.componentes-imgs img {
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px #F7AB29;
+  transition: transform 0.3s ease;
+
+}
+
+.componentes-imgs img:hover {
+  transform: scale(1.05);
+}
+
+.footer-content {
+    color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+}
+
+.componente {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.componente img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #F7AB29;
+}
+
+.componente p {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+}

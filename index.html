@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reglas del Juego - Matika</title>
+  <link rel="stylesheet" href="matika.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="recursos/Copia de logo.png" alt="Logo Matika">
+      </div>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#reglas">Reglas</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#componentes">Componentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <center>
+    <h1>Factor X Bingo</h1>
+  <h3><p class="subtitulo">¿Listos para convertir la factorización en una competencia emocionante?</p></h3>
+
+  </center>
+  <center>
+    <h2 id="objetivo">¿Como se juega Factor X Bingo?</h2>
+    <p>Los jugadores resolverán expresiones algebraicas, marcarán sus resultados en el tablero y usarán comodines estratégicos para avanzar. La rapidez, precisión y planificación son clave para ganar.</p>
+
+    <h2>Objetivo del Juego</h2>
+    <p>Resolver correctamente ejercicios de factorización para completar una línea en el tablero de bingo. Por cada ejercicio resuelto correctamente, los estudiantes ganan puntos que pueden usar para comprar ventajas que los ayuden a completar su tablero más rápido o interferencias para dificultar el progreso de sus compañeros. ¡Gana el primer estudiante que logre completar una línea y declare "¡Bingo!"!</p>
+
+    
+
+<h3 id="componentes">Componentes</h3>
+
+<div class="componentes-imgs">
+  <div class="componente">
+    <img src="recursos/cartilla.png" alt="Tablero de juego">
+    <p>Cartillas dependiendo de los grupos generados por el profesor y con su respectivo nivel (mínimo 3).</p>
+  </div>
+
+  <div class="componente">
+    <img src="recursos/profesor.png" alt="Cartas del juego">
+    <p>Papeles de las ecuaciones que tendrá el profesor (el número dependerá del profesor).</p>
+  </div>
+
+  <div class="componente">
+    <img src="recursos/COMODINES.png" alt="Comodines">
+    <p>Comodines.</p>
+  </div>
+
+  <div class="componente">
+    <img src="recursos/monedas.png" alt="Monedas">
+    <p>Monedas de uno, dos y tres puntos respectivamente.</p>
+  </div>
+
+  <div class="componente">
+    <img src="recursos/certificados.png" alt="Certificados">
+    <p>3 certificados para los ganadores (primer puesto, segundo puesto y tercer puesto).</p>
+  </div>
+</div>
+
+</center>
+
+
+<center>
+    <h2 id="reglas">Reglas</h2>
+    </center>
+    <ul>
+      <li>El docente encargado divide a los estudiantes en 4 equipos</li>
+      <li>Cada equipo recibe una cartilla de bingo con las mismas factorizaciones, pero en un orden distinto.</li>
+      <li>El docente selecciona el nivel de dificultad antes de empezar: Básico, Intermedio, Avanzado.</li>
+      <li>El docente extrae un expresión algebraica al azar de una caja y la coloca en la pizarra.</li>
+      <li>Los equipos deben resolver la factorización y entregarla por escrito de forma ordenada.</li>
+      <li>El docente revisa las respuestas en orden de entrega.</li>
+      <li>Los primero tresw equipos en entregar correctamente obtienen monedas:una moneda de 3 puntos,una moneda de 2 puntos, una moneda de 1 punto.</li>
+      <li>Los equipos que entreguen respuestas incorrectas pierden la casilla correspondiente</li>
+      <li>Solo los equipos que repondienrón correctamente pueden marcar la casilla correspondiente en su cartilla de bingo.</li>
+      <li>La casilla queda anulada si la respuesta es incorrecta.</li>
+      <li>Con las monedas acumuladas, los equipos pueden comprar comodines al inicio de una nueva ronda.</li>
+      <li>Los comodines tienen diferentes costos y beneficios estratégicos (ver sección de comodines)</li>
+      <li>El juego continúa hasta que un equipo complete una línea, columna o diagonal en su cartilla y grite BINGO</li>
+      <li>El docente verificara que todas las casillas marcadas correspondan a las respuestas correctas.</li>
+      <li>Si mas de un equipo completa el bingo al mismo tiempo, gana el quipo con mas monedas.</li>
+      <li>El quipo ganador recibe un certificado de reconocimiento y puntos extra para tareas o pruebas (a criterio del docente)</li>
+    </ul>
+
+    <center>
+    <div class="highlight">
+      
+      <strong>Gana el jugador que complete una fila o columna y grite "BINGO"</strong>
+    
+    </div>
+
+    <h2>Motivación y Recompensas</h2>
+  
+    <p>Los jugadores reciben recompensas simbólicas por cada nivel superado. Además, los puntos permiten medir el progreso y motivar a la mejora.</p>
+  </div>
+</center>
+  <footer>
+  <div class="footer-content">
+    <p>&copy; 2025 Factor x BINGO. Los derechos son reservados.</p>
+    <img src="recursos/Copia de logo.png" alt="Logo Matika" class="footer-logo">
+  </div>
+</footer>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      document.getElementById('nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
